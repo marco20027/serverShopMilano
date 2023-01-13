@@ -1,5 +1,5 @@
 {
-  "name": "esamebackend",
+  "name": "server",
   "version": "1.0.0",
   "description": "esame",
   "main": "index.js",
