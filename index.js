@@ -4,6 +4,13 @@ fastify.register(require('@fastify/mysql'), {
   connectionString: 'mysql://root@localhost/shopmilano'
 })
 
+const setup = async () => {
+  await fastify.register(require("@fastify/cors"), {
+      origin: "*"
+  })
+}
+setup();
+
 
 fastify.get('/', async (request, reply) => {
   return { hello: 'world' }
